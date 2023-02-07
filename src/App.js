@@ -11,11 +11,15 @@ import PublicRoute from './Routes/PublicRoute';
 import Men from './container/men/Men';
 import Women from './container/women/Women';
 import Kid from './container/kid/Kid';
+import MedicineCity from './Admin/container/MedicintCity';
+import DoctoreCity from './Admin/container/MenEra';
+import LayoutEra from './Admin/component/layout/LayoutEra';
+import MenEra from './Admin/container/MenEra';
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Switch>
         <PublicRoute exact path="/" component={Home} />
         <PublicRoute exact path="/men" component={Men} />
@@ -25,7 +29,7 @@ function App() {
         <PublicRoute exact path="/Signin" restricted={true} component={Signin} />
         <PublicRoute exact path="/About" component={AboutUs} />
       </Switch>
-      <Footer />
+      <Footer /> */}
 
       {/* <Header /> */}
       {/* <Home /> */}
@@ -33,6 +37,15 @@ function App() {
       {/* <Signin /> */}
       {/* <Footer /> */}
       {/* <About /> */}
+
+     <LayoutEra>
+        <Switch>
+          {/* <Route exact path={"/Medision"} component={MedicineCity} /> */}
+          <Route exact path={"/MenEra"} component={MenEra} />
+          <Route exact path={"/WomenEra"} component={MenEra} />
+          <Route exact path={"/KidEra"} component={MenEra} />
+        </Switch>
+      </LayoutEra> 
     </>
   );
 }

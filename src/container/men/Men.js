@@ -28,8 +28,7 @@ function Men(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            {/* <div className="men-item-carousel"> */}
-                            {/* <div className="owl-men-item owl-carousel"> */}
+                           
                             <Slider {...settings}>
 
                                 <div className="item">
@@ -125,8 +124,7 @@ function Men(props) {
                                     </div>
                                 </div>
                             </Slider>
-                            {/* </div> */}
-                            {/* </div> */}
+                          
                         </div>
                     </div>
                 </div>
